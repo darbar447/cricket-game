@@ -9,13 +9,13 @@ const resetBtn = document.getElementById("resetBtn");
 
 let score = 0;
 let balls = 0;
-let totalBalls = 12; // 2 overs
+let totalBalls = 12;
 let gameOver = false;
 
 function updateScoreboard() {
   scoreDisplay.textContent = score;
   ballsDisplay.textContent = balls;
-  oversDisplay.textContent = \`\${Math.floor(balls / 6)}.\${balls % 6}\`;
+  oversDisplay.textContent = `${Math.floor(balls / 6)}.${balls % 6}`;
 }
 
 function dropBall() {
@@ -51,7 +51,7 @@ function dropBall() {
       if (ballCenter >= batLeft && ballCenter <= batRight) {
         const run = Math.random() > 0.5 ? 6 : 4;
         score += run;
-        message.textContent = \`\${run} RUNS! 🏃\`;
+        message.textContent = `${run} RUNS! 🏃`;
       } else {
         message.textContent = "🏏 OUT!";
         gameOver = true;
