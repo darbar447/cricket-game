@@ -3,7 +3,6 @@ const ball = document.getElementById("ball");
 const scoreDisplay = document.getElementById("score");
 const ballsDisplay = document.getElementById("balls");
 const oversDisplay = document.getElementById("overs");
-const totalBallsDisplay = document.getElementById("totalBalls");
 const message = document.getElementById("message");
 const resetBtn = document.getElementById("resetBtn");
 

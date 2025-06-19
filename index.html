@@ -23,6 +23,28 @@
   <p id="message"></p>
   <button id="resetBtn">Reset Game</button>
 
+  <!-- UPI Donation Section -->
+  <div style="margin-top: 40px; text-align: center;">
+    <h3>🙏 Support This Game</h3>
+    <img src="donate-qr.png" alt="Donate QR" width="200" style="border: 2px solid #444; border-radius: 10px;" />
+    <p><strong>Scan & Pay via UPI</strong></p>
+    <p><strong>UPI ID:</strong> balramsinghdarbar4@okaxis</p>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="bg-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    document.body.addEventListener("click", function () {
+      const bg = document.getElementById("bgMusic");
+      bg.volume = 0.2;
+      bg.play().catch(e => {});
+    }, { once: true });
+  </script>
+
   <script src="script.js"></script>
 </body>
 </html>

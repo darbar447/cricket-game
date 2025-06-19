@@ -24,8 +24,11 @@ body {
   left: 130px;
   width: 40px;
   height: 80px;
-  background-color: #8d6e63;
-  transition: transform 0.2s;
+  background: linear-gradient(to bottom, #795548, #5d4037);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
 }
 #ball {
   position: absolute;
